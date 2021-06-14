@@ -1,0 +1,17 @@
+flask
+flask-admin
+flask-security
+flask-script
+Flask-Assets
+Flask-Principal
+Flask-Mail
+flask-cache
+flask-debugtoolbar
+flask_bootstrap
+flask-restx
+flask-cors
+flask-login
+flask_session
+requests>=2.5.0
+gunicorn
+
