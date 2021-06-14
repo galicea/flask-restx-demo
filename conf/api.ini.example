@@ -1,0 +1,5 @@
+[app]
+origin=*
+secret=1243
+logfilename=/tmp/api.log
+
