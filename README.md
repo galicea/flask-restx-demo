@@ -1,12 +1,12 @@
 # Quick start
 
-1) Create the catalog:
+1) Create a folder:
 
 ```
 mkdir demo
 cd demo
 ```
-2) Prepare environment (optionally)
+2) Prepare the environment (optionally)
 ```
 pip install virtualenv
 virtualenv -p /usr/bin/python3 venv
@@ -17,15 +17,15 @@ source venv/bin/activate
 git clone https://github.com/galicea/flask-restx-demo.git
 cd flask-restx-demo
 ```
-4) Install nessesery modules
+4) Install necessary modules
 ```
 pip install -r requirements.txt
 ```
-5) Create api.ini file:
+5) Create a file named api.ini:
 ```
 cp conf/api.ini.example conf/api.ini
 ```
-6) Run test:
+6) Run the application for testing:
 ```
 ./run_debug
 ```
@@ -33,7 +33,7 @@ See address:
 http://localhost:5000/help
 
 # Simple example
-1) Create subdir (ex my)  in directory rest and module module rest/my/my.py:
+1) Create subfolder (eg. "my")  in the folder "rest" and create inside this subfolder new  module rest/my/my.py:
 
 
 
@@ -60,11 +60,11 @@ class ApiHello(Resource):
        }
 ```
 
-2) Add import ns from module above to  rest/\_\_ini\_\_.py:
+2) Add an import ns from module created in 1) to  rest/\_\_ini\_\_.py:
 ```py
 from .my.my import ns as api_my
 ```
-3) Append api\_ns to definitions in conf/endpoints.py file:
+3) Append api\_ns to definitions in conf/endpoints.py:
 
 ```py
 from rest import api_my
